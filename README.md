@@ -1,6 +1,8 @@
 # Todo List App
 A Todo List App.
 
+![screen shot](./screenshot.png)
+
 `create-react-app` was used to create the project.
 
 Made with:
