@@ -34,20 +34,18 @@ export default function RenderTodo() {
   }
 
   return (
-    <div>
-      <Stack spacing={2}>
-        <Paper sx={{ p: 3 }}>
-          <Stack spacing={2}>
-            <TextField label="内容" variant="standard" value={text} onChange={textChangeEvent} />
-            <Button onClick={addTodoEvent}>この内容で追加</Button>
-          </Stack>
-        </Paper>
-        <Paper sx={{ p: 1 }}>
-          <List subheader={<ListSubheader>やること一覧</ListSubheader>}>
-            {(todoStore.items.map((item, index) => renderListItem(item, index)))}
-          </List>
-        </Paper>
-      </Stack>
-    </div>
+    <Stack spacing={2}>
+      <Paper sx={{ p: 3 }}>
+        <Stack spacing={2}>
+          <TextField label="内容" variant="standard" value={text} onChange={textChangeEvent} />
+          <Button onClick={addTodoEvent}>この内容で追加</Button>
+        </Stack>
+      </Paper>
+      <Paper sx={{ p: 1 }}>
+        <List subheader={<ListSubheader>やること一覧</ListSubheader>}>
+          {(todoStore.items.map((item, index) => renderListItem(item, index)))}
+        </List>
+      </Paper>
+    </Stack>
   );
 }
