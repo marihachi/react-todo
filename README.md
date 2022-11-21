@@ -1,5 +1,6 @@
 # Todo List App
 A Todo List App.
+
 `create-react-app` was used to create the project.
 
 Made with:
@@ -16,4 +17,5 @@ npm run start
 
 ## License
 MIT Licensed.
+
 (c) 2022 marihachi.
